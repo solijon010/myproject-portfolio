@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Link for Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link for output Css -->
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <header
+      class="my-container flex justify-between items-center pt-[1.6875rem] py-5 shadow-md"
+    >
+      <a class="my-container text-bold text-2xl" href="index.html"
+        >Solijon Ikromov</a
+      >
+      <nav>
+        <ul class="my-container hidden sm:flex gap-[2.0625rem]">
+          <li>
+            <a
+              href="#"
+              class="hover:text-primary transition-all duration-500 ease-in-out font-medium text-xl"
+              >Works</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-primary transition-all duration-500 ease-in-out font-medium text-xl"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-primary transition-all duration-500 ease-in-out font-medium text-xl"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Bar uchun buttun qo'ydim -->
+      <button type="button" class="sm:hidden block ml-auto">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- /Header section -->
+
+    <main>
+      <section class="pt-[1.5625rem] sm:pb-[3.625rem] md:pt-[8.75rem]">
+        <div
+          class="my-container flex flex-col items-center text-center md:flex-row-reverse md:items-center md:text-left md:gap-8 md:justify-between"
+        >
+          <img
+            class="rounded-full shadow-[-3.5px_9px_0_0_var(--color-card-bg)] mb-11 md:mb-0"
+            src="./src/images/png/hero man img.png"
+            alt="hero man"
+            width="170"
+            height="170"
+          />
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left mb-[4.4375rem] md:mb-0"
+          >
+            <h1
+              class="font-bold leading-[1.25] text-[2rem] mb-5 md:max-w-[506px]"
+            >
+              Hi, I am John, Creative Technologist
+            </h1>
+            <p class="mb-7 leading-[1.25] max-w-[500px]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button
+              class="text-[1.25rem] rounded-[.125rem] bg-primary text-white py-[.8125rem] px-5 font-medium active:-translate-y-1 transition-transform duration-150"
+              type="button"
+            >
+              Download Resume
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- /Section end -->
+    <section class="w-full bg-card-bg py-8 px-5">
+  <div class="my-container">
+    <!-- Header -->
+    <div class="flex justify-center sm:justify-between items-center mb-[1.375rem]">
+      <span class="text-[1.375rem] font-normal leading-[1.25]">Recent posts</span>
+      <a href="#">
+        <span
+          class="text-secondy font-normal leading-[1] transform transition-all duration-300 hover:scale-[var(--my-scale)] hidden sm:inline"
+        >
+          View all
+        </span>
+      </a>
+    </div>
+
+    <!-- Cards wrapper -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:justify-center pb-8">
+      
+      <!-- Card 1 -->
+      <div class="flex flex-col bg-main-bg px-[1.375rem] pt-6 pb-[.4375rem]">
+        <h2 class="font-bold leading-[1] text-[1.625rem] mb-[1.0625rem]">
+          Making a design system from scratch
+        </h2>
+        <div class="flex gap-[1.625rem] items-center mb-[.6875rem]">
+          <span class="text-[1.125rem] font-normal leading-[1]">12 Feb 2020</span>
+          <div class="w-[.0625rem] h-[1.3125rem] bg-dark"></div>
+          <span class="text-[1.125rem] font-normal leading-[1]">Design, Pattern</span>
+        </div>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+          sunt nostrud amet.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex flex-col bg-main-bg px-[1.375rem] pt-6 pb-[.4375rem]">
+        <h2 class="font-bold leading-[1] text-[1.625rem] mb-[1.0625rem]">
+          Creating pixel perfect icons in Figma
+        </h2>
+        <div class="flex gap-[1.625rem] items-center mb-[.6875rem]">
+          <span class="text-[1.125rem] font-normal leading-[1]">12 Feb 2020</span>
+          <div class="w-[.0625rem] h-[1.3125rem] bg-dark"></div>
+          <span class="text-[1.125rem] font-normal leading-[1]">Figma, Icon Design</span>
+        </div>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+          sunt nostrud amet.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    </main>
+  </body>
+</html>
