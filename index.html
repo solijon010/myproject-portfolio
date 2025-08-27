@@ -19,7 +19,7 @@
     <header
       class="my-container flex justify-between items-center pt-[1.6875rem] py-5 shadow-md"
     >
-      <a class="my-container text-bold text-2xl" href="index.html"
+      <a class="text-2xl my-container text-bold" href="index.html"
         >Solijon Ikromov</a
       >
       <nav>
@@ -27,37 +27,38 @@
           <li>
             <a
               href="#"
-              class="hover:text-primary transition-all duration-500 ease-in-out font-medium text-xl"
+              class="text-xl font-medium transition-all duration-500 ease-in-out hover:text-primary"
               >Works</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="hover:text-primary transition-all duration-500 ease-in-out font-medium text-xl"
+              class="text-xl font-medium transition-all duration-500 ease-in-out hover:text-primary"
               >Blog</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="hover:text-primary transition-all duration-500 ease-in-out font-medium text-xl"
+              class="text-xl font-medium transition-all duration-500 ease-in-out hover:text-primary"
               >Contact</a
             >
           </li>
         </ul>
       </nav>
       <!-- Bar uchun buttun qo'ydim -->
-      <button type="button" class="sm:hidden block ml-auto">
+      <button type="button" class="block ml-auto sm:hidden">
         <i class="fa-solid fa-bars"></i>
       </button>
     </header>
     <!-- /Header section -->
+    <!-- Info: BU yerda main qismi boshlanyapti mana  -->
 
     <main>
       <section class="pt-[1.5625rem] sm:pb-[3.625rem] md:pt-[8.75rem]">
         <div
-          class="my-container flex flex-col items-center text-center md:flex-row-reverse md:items-center md:text-left md:gap-8 md:justify-between"
+          class="flex flex-col items-center text-center my-container md:flex-row-reverse md:items-center md:text-left md:gap-8 md:justify-between"
         >
           <img
             class="rounded-full shadow-[-3.5px_9px_0_0_var(--color-card-bg)] mb-11 md:mb-0"
@@ -89,63 +90,156 @@
         </div>
       </section>
       <!-- /Section end -->
-    <section class="w-full bg-card-bg py-8 px-5">
-  <div class="my-container">
-    <!-- Header -->
-    <div class="flex justify-center sm:justify-between items-center mb-[1.375rem]">
-      <span class="text-[1.375rem] font-normal leading-[1.25]">Recent posts</span>
-      <a href="#">
-        <span
-          class="text-secondy font-normal leading-[1] transform transition-all duration-300 hover:scale-[var(--my-scale)] hidden sm:inline"
-        >
-          View all
-        </span>
-      </a>
-    </div>
 
-    <!-- Cards wrapper -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:justify-center pb-8">
-      
-      <!-- Card 1 -->
-      <div class="flex flex-col bg-main-bg px-[1.375rem] pt-6 pb-[.4375rem]">
-        <h2 class="font-bold leading-[1] text-[1.625rem] mb-[1.0625rem]">
-          Making a design system from scratch
-        </h2>
-        <div class="flex gap-[1.625rem] items-center mb-[.6875rem]">
-          <span class="text-[1.125rem] font-normal leading-[1]">12 Feb 2020</span>
-          <div class="w-[.0625rem] h-[1.3125rem] bg-dark"></div>
-          <span class="text-[1.125rem] font-normal leading-[1]">Design, Pattern</span>
+      <section class="w-full px-5 py-8 bg-card-bg">
+        <div class="my-container">
+          <!-- Header -->
+          <div
+            class="flex justify-center sm:justify-between items-center mb-[1.375rem]"
+          >
+            <span class="text-[1.375rem] font-normal leading-[1.25]"
+              >Recent posts</span
+            >
+            <a href="#">
+              <span
+                class="text-secondy font-normal leading-[1] transform transition-all duration-300 hover:scale-[var(--my-scale)] hidden sm:inline"
+              >
+                View all
+              </span>
+            </a>
+          </div>
+
+          <!-- Cards wrapper -->
+          <div
+            class="grid grid-cols-1 gap-5 pb-8 md:grid-cols-2 md:justify-center"
+          >
+            <!-- Card 1 -->
+            <div
+              class="flex flex-col bg-main-bg px-[1.375rem] pt-6 pb-[.4375rem]"
+            >
+              <h2 class="font-bold leading-[1] text-[1.625rem] mb-[1.0625rem]">
+                Making a design system from scratch
+              </h2>
+              <div class="flex gap-[1.625rem] items-center mb-[.6875rem]">
+                <span class="text-[1.125rem] font-normal leading-[1]"
+                  >12 Feb 2020</span
+                >
+                <div class="w-[.0625rem] h-[1.3125rem] bg-dark"></div>
+                <span class="text-[1.125rem] font-normal leading-[1]"
+                  >Design, Pattern</span
+                >
+              </div>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="flex flex-col bg-main-bg px-[1.375rem] pt-6 pb-[.4375rem]"
+            >
+              <h2 class="font-bold leading-[1] text-[1.625rem] mb-[1.0625rem]">
+                Creating pixel perfect icons in Figma
+              </h2>
+              <div class="flex gap-[1.625rem] items-center mb-[.6875rem]">
+                <span
+                  class="text-[1.125rem] font-normal leading-[1] flex-nowrap"
+                  >12 Feb 2020</span
+                >
+                <div class="w-[.0625rem] h-[1.3125rem] bg-dark"></div>
+                <span
+                  class="text-[1.125rem] font-normal leading-[1] flex-nowrap"
+                  >Figma, Icon Design</span
+                >
+              </div>
+
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
         </div>
-        <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
-          sunt nostrud amet.
-        </p>
-      </div>
+      </section>
+      <!-- Info: Pastdagi Cardlarni tayyorlayapman "Features Works" -->
 
-      <!-- Card 2 -->
-      <div class="flex flex-col bg-main-bg px-[1.375rem] pt-6 pb-[.4375rem]">
-        <h2 class="font-bold leading-[1] text-[1.625rem] mb-[1.0625rem]">
-          Creating pixel perfect icons in Figma
-        </h2>
-        <div class="flex gap-[1.625rem] items-center mb-[.6875rem]">
-          <span class="text-[1.125rem] font-normal leading-[1]">12 Feb 2020</span>
-          <div class="w-[.0625rem] h-[1.3125rem] bg-dark"></div>
-          <span class="text-[1.125rem] font-normal leading-[1]">Figma, Icon Design</span>
+      <section class="w-full px-5 py-8 bg-main-bg">
+        <div class="my-container">
+          <h2
+            class="text-[1.375rem] font-normal leading-[1.25] text-center md:text-left mb-[1.375rem]"
+          >
+            Featured works
+          </h2>
+          <!-- Hack: mana buyerda esa card bir boshlangan -->
+          <div class="flex flex-col md:flex-row gap-[18px] mb-4">
+            <img
+              src="./src/images/jpeg/first card img.jpg"
+              alt="Rating img"
+              class="w-full h-auto md:w-[246px] md:h-[180px]"
+            />
+
+            <div class="flex flex-col gap-[1.0625rem]">
+              <h2 class="text-3xl font-bold leading-[1]">Designing Dashboards</h2>
+              <div class="flex gap-[1.625rem] items-center">
+                <span class=" text-white rounded-2xl bg-dark px-[.625rem] py-1">2020</span>
+                <span class="text-[1.25rem] text-light font-normal leading-[1.]">Dashboard</span>
+              </div>
+              <p class="leading-[1.25]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <hr class="w-full mb-8 text-light h-[.125rem]">
+          <div class="flex flex-col md:flex-row gap-[18px] mb-9">
+            <img
+              src="./src/images/jpeg/second card img.jpg"
+              alt="Rating img"
+              class="w-full h-auto md:w-[246px] md:h-[180px]"
+            />
+
+            <div class="flex flex-col gap-[1.0625rem]">
+              <h2 class="text-3xl font-bold leading-[1]">Vibrant Portraits of 2020</h2>
+              <div class="flex gap-[1.625rem] items-center">
+                <span class=" text-white rounded-2xl bg-dark px-[.625rem] py-1">2018</span>
+                <span class="text-[1.25rem] text-light font-normal leading-[1.]">Illustration</span>
+              </div>
+              <p class="leading-[1.25]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <hr class="w-full mb-8 text-light h-[.125rem]">
+          <div class="flex flex-col md:flex-row gap-[18px] mb-8">
+            <img
+              src="./src/images/jpeg/third card img.jpg"
+              alt="Rating img"
+              class="w-full h-auto md:w-[246px] md:h-[180px]"
+            />
+
+            <div class="flex flex-col gap-[1.0625rem]">
+              <h2 class="text-3xl font-bold leading-[1]">36 Days of Malayalam type</h2>
+              <div class="flex gap-[1.625rem] items-center">
+                <span class=" text-white rounded-2xl bg-dark px-[.625rem] py-1">2018</span>
+                <span class="text-[1.25rem] text-light font-normal leading-[1.]">Typography</span>
+              </div>
+              <p class="leading-[1.25]">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <hr class="w-full mb-8 text-light h-[.125rem]">
         </div>
-        <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
-          sunt nostrud amet.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
+        
+      </section>
     </main>
   </body>
 </html>
