@@ -18,18 +18,19 @@
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+    --font-weight-black: 900;
     --radius-2xl: 1rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-dark: #21243D;
-    --color-primary: #FF6464;
-    --color-secondy: #00A8CC;
-    --color-card-bg: #EDF7FA;
-    --color-main-bg: #FFFFFF;
-    --color-light: #8695A4;
+    --color-dark: #21243d;
+    --color-primary: #ff6464;
+    --color-secondy: #00a8cc;
+    --color-card-bg: #edf7fa;
+    --color-main-bg: #ffffff;
+    --color-light: #8695a4;
     --my-scale: 1.05;
   }
 }
@@ -182,6 +183,18 @@
   }
 }
 @layer utilities {
+  .mt-\[1\.625rem\] {
+    margin-top: 1.625rem;
+  }
+  .mt-\[4\.875rem\] {
+    margin-top: 4.875rem;
+  }
+  .mt-\[5\.625rem\] {
+    margin-top: 5.625rem;
+  }
+  .mt-\[6\.625rem\] {
+    margin-top: 6.625rem;
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -203,14 +216,53 @@
   .mb-\[\.6875rem\] {
     margin-bottom: .6875rem;
   }
+  .mb-\[\.9375rem\] {
+    margin-bottom: .9375rem;
+  }
   .mb-\[1\.375rem\] {
     margin-bottom: 1.375rem;
   }
   .mb-\[1\.0625rem\] {
     margin-bottom: 1.0625rem;
   }
+  .mb-\[1\.875rem\] {
+    margin-bottom: 1.875rem;
+  }
+  .mb-\[1\.4375rem\] {
+    margin-bottom: 1.4375rem;
+  }
+  .mb-\[1\.5625rem\] {
+    margin-bottom: 1.5625rem;
+  }
+  .mb-\[1\.8125rem\] {
+    margin-bottom: 1.8125rem;
+  }
+  .mb-\[2\.875rem\] {
+    margin-bottom: 2.875rem;
+  }
+  .mb-\[3\.375rem\] {
+    margin-bottom: 3.375rem;
+  }
+  .mb-\[3\.625rem\] {
+    margin-bottom: 3.625rem;
+  }
+  .mb-\[3\.3125rem\] {
+    margin-bottom: 3.3125rem;
+  }
+  .mb-\[3\.4375rem\] {
+    margin-bottom: 3.4375rem;
+  }
+  .mb-\[4\.875rem\] {
+    margin-bottom: 4.875rem;
+  }
   .mb-\[4\.4375rem\] {
     margin-bottom: 4.4375rem;
+  }
+  .mb-\[5\.1875rem\] {
+    margin-bottom: 5.1875rem;
+  }
+  .mb-\[78px\] {
+    margin-bottom: 78px;
   }
   .ml-auto {
     margin-left: auto;
@@ -236,14 +288,20 @@
   .h-\[1\.3125rem\] {
     height: 1.3125rem;
   }
-  .h-\[2px\] {
-    height: 2px;
-  }
   .h-auto {
     height: auto;
   }
   .w-\[\.0625rem\] {
     width: .0625rem;
+  }
+  .w-\[24\.9375rem\] {
+    width: 24.9375rem;
+  }
+  .w-\[677px\] {
+    width: 677px;
+  }
+  .w-\[681px\] {
+    width: 681px;
   }
   .w-full {
     width: 100%;
@@ -284,6 +342,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-9 {
+    gap: calc(var(--spacing) * 9);
+  }
   .gap-\[1\.0625rem\] {
     gap: 1.0625rem;
   }
@@ -295,6 +356,9 @@
   }
   .gap-\[18px\] {
     gap: 18px;
+  }
+  .scroll-smooth {
+    scroll-behavior: smooth;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -314,9 +378,6 @@
   }
   .bg-dark {
     background-color: var(--color-dark);
-  }
-  .bg-light {
-    background-color: var(--color-light);
   }
   .bg-main-bg {
     background-color: var(--color-main-bg);
@@ -344,6 +405,9 @@
   }
   .py-\[\.8125rem\] {
     padding-block: .8125rem;
+  }
+  .py-\[3\.3125rem\] {
+    padding-block: 3.3125rem;
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
@@ -387,6 +451,15 @@
   .text-\[1\.625rem\] {
     font-size: 1.625rem;
   }
+  .text-\[1\.875rem\] {
+    font-size: 1.875rem;
+  }
+  .text-\[2\.75rem\] {
+    font-size: 2.75rem;
+  }
+  .text-\[2\.125rem\] {
+    font-size: 2.125rem;
+  }
   .text-\[2rem\] {
     font-size: 2rem;
   }
@@ -401,6 +474,10 @@
   .leading-\[1\] {
     --tw-leading: 1;
     line-height: 1;
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -487,6 +564,11 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .active\:text-primary {
+    &:active {
+      color: var(--color-primary);
+    }
+  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
@@ -517,14 +599,44 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
   .md\:h-\[180px\] {
     @media (width >= 48rem) {
       height: 180px;
     }
   }
+  .md\:h-\[460px\] {
+    @media (width >= 48rem) {
+      height: 460px;
+    }
+  }
   .md\:w-\[246px\] {
     @media (width >= 48rem) {
       width: 246px;
+    }
+  }
+  .md\:w-\[506px\] {
+    @media (width >= 48rem) {
+      width: 506px;
+    }
+  }
+  .md\:w-\[681px\] {
+    @media (width >= 48rem) {
+      width: 681px;
     }
   }
   .md\:max-w-\[506px\] {
@@ -585,28 +697,28 @@
 }
 @font-face {
   font-display: swap;
-  font-family: 'Heebo';
+  font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/heebo-v27-latin-regular.woff2') format('woff2');
+  src: url("../fonts/heebo-v27-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: 'Heebo';
+  font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/heebo-v27-latin-500.woff2') format('woff2');
+  src: url("../fonts/heebo-v27-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: 'Heebo';
+  font-family: "Heebo";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/heebo-v27-latin-700.woff2') format('woff2');
+  src: url("../fonts/heebo-v27-latin-700.woff2") format("woff2");
 }
 @layer base {
   body {
-    font-family: 'Heebo', ui-sans-serif, system-ui, sans-serif;
+    font-family: "Heebo", ui-sans-serif, system-ui, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -617,6 +729,12 @@
   }
   button {
     cursor: pointer;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    scroll-behavior: smooth;
   }
 }
 @layer components {
